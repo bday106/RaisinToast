@@ -337,9 +337,7 @@ static CGFloat const RZErrorWindowBlackoutAnimationInterval = 0.5f;
 
 - (NSUInteger)supportedInterfaceOrientations
 {
-    UIViewController *topViewController = [RZRootMessagingViewController topViewController];
-    
-    return [topViewController supportedInterfaceOrientations];
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 #pragma mark - Helper class methods
